@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nutrition Information"
+        android:id="@+id/txt_header1"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="per meal"
+        android:id="@+id/txt_header2"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#606060"
+        android:gravity="center" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal">
+
+        <com.customlist2.view.CustomPercentBar
+            android:id="@+id/ctm_nutrition"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            custom:backBarColor="#ffffff"
+            custom:backgroundColor="#efefef"
+            custom:percentBarColor="#ff0000"
+            custom:startAngle="150"
+            custom:endAngle="345"
+            custom:isSemiBar="true"
+            custom:backBarWidth="6"
+            custom:percentBarWidth="18"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calories"
+                android:id="@+id/textView3"
+                android:textColor="#000000"
+                android:layout_gravity="center_horizontal"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="333"
+                android:id="@+id/txt_carories"
+                android:textColor="#000000"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp">
+
+            <com.customlist2.view.CustomPercentBar
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/ctm_fat"
+                android:layout_weight="1"
+                custom:startAngle="180"
+                custom:endAngle="280"
+                custom:percentBarColor="#ff9901"
+                custom:backgroundColor="#efefef"
+                custom:backBarColor="#ffffff"
+                custom:backBarWidth="6"
+                custom:percentBarWidth="12"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fat"
+                    android:id="@+id/textView"
+                    android:textColor="#000000"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="35%"
+                    android:id="@+id/txt_fat"
+                    android:textColor="#000000"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp">
+
+            <com.customlist2.view.CustomPercentBar
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/ctm_carbs"
+                android:layout_weight="1"
+                custom:startAngle="180"
+                custom:endAngle="360"
+                custom:percentBarColor="#3ea600"
+                custom:backgroundColor="#efefef"
+                custom:backBarColor="#ffffff"
+                custom:backBarWidth="6"
+                custom:percentBarWidth="12"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Carbs"
+                    android:id="@+id/textView5"
+                    android:textColor="#000000"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="51%"
+                    android:id="@+id/txt_carbs"
+                    android:textColor="#000000"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <com.customlist2.view.CustomPercentBar
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/ctm_protein"
+                android:layout_weight="1"
+                custom:startAngle="180"
+                custom:endAngle="240"
+                custom:percentBarColor="#3b9427"
+                custom:backgroundColor="#efefef"
+                custom:backBarColor="#ffffff"
+                custom:backBarWidth="6"
+                custom:percentBarWidth="12"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Protein"
+                    android:id="@+id/textView7"
+                    android:textColor="#000000"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="14%"
+                    android:id="@+id/txt_protein"
+                    android:textColor="#000000"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="amount"
+            android:id="@+id/txt_amount"
+            android:textColor="#606060"
+            android:layout_marginLeft="50dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="per meal"
+            android:id="@+id/txt_per_meal"
+            android:layout_alignParentRight="true"
+            android:textColor="#606060"
+            android:layout_marginRight="50dp" />
+    </RelativeLayout>
+
+    <com.customlist2.view.ExpandableHeightListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lst_nutrition"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/drawable_nutrition_round"
+        android:divider="#d4d4d4" />
+</LinearLayout>

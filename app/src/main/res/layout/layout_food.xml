@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_food1"
+        android:id="@+id/layout_container">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#aa000000"
+            android:id="@+id/layout_header"
+            android:layout_below="@+id/img_decorator_down"
+            android:layout_marginTop="-5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grilled Stick over Basil Pesto"
+                android:id="@+id/txt_title"
+                android:textColor="#ffffff"
+                android:textSize="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fresh basil pesto takes a classic combo of sauteed mushrooms and steak to uncharted flavor territory"
+                android:id="@+id/txt_content"
+                android:textColor="#ffffff"
+                android:textSize="16dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="15dp"
+                android:lineSpacingExtra="5dp"/>
+        </LinearLayout>
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/grd_price"
+            android:numColumns="3"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="false"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:layout_alignParentTop="false"
+            android:layout_marginBottom="50dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_decorator_down"
+            android:background="@drawable/decorator_down" />
+
+    </RelativeLayout>
+
+</LinearLayout>

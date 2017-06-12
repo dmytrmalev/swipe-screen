@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomPercentBar">
+        <attr name="startAngle" format="integer"/>
+        <attr name="endAngle" format="integer"/>
+        <attr name="valueAngle" format="integer"/>
+        <attr name="backBarWidth" format="integer"/>
+        <attr name="percentBarWidth" format="integer"/>
+        <attr name="percentBarColor" format="color"/>
+        <attr name="backBarColor" format="color"/>
+        <attr name="backgroundColor" format="color"/>
+        <attr name="isSemiBar" format="boolean"/>
+    </declare-styleable>
+</resources>

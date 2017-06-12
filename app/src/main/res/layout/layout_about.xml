@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:id="@+id/img_food_about"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bg_food1" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#aa000000"
+                android:id="@+id/layout_mask"></LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ABOUT THIS MEAL"
+                android:id="@+id/txt_title"
+                android:textColor="#ffffff"
+                android:textSize="23dp"
+                android:background="@drawable/decorator_wide"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Our style of cooking is very traditional but when we have guests we always try to offer something a little bit different from our usual everyday menu"
+                android:id="@+id/txt_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:textSize="16dp"
+                android:layout_below="@+id/txt_title"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="5dp"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
